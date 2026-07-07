@@ -80,6 +80,7 @@ export function GoalManager(props: Props) {
     }
 
     dispatch(updateGoalRedux(updatedGoal))
+    updateGoalApi(props.goal.id, updatedGoal)
   }
 
   const updateNameOnChange = (
